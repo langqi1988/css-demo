@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+	}
+	.listbox{
+		width: 500px;
+		margin: 50px auto;
+	}
+	.listbox .list{
+		position: relative;
+	}
+	.listbox .list a{
+		display: block;
+		height: 35px;
+		background: linear-gradient(#cecece,#8f8f8f);
+		border-radius: 5px;
+		color: #424242;
+		padding-left: 12px;
+		line-height: 35px;
+	}
+	.listbox .list p{
+		transition: all 0.1s linear;
+		height: 0px;
+		overflow: auto;
+		padding-left: 10px;
+		margin: 5px 0;
+	}
+	.listbox .list span{
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		display: block;
+		width: 0;
+		height: 0;
+		border: 5px solid white;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		border-bottom: 5px solid transparent;
+	}
+	.listbox .list:target p{
+		height: 100px;
+	}
+	.listbox .list:hover a,
+	.listbox .list:target a{
+		background: linear-gradient(#6bb2ff,#2288dd);
+		color: white;
+	}
+	.listbox .list:target span{
+		border-top: 5px solid transparent;
+		border-left: 5px solid white;
+		right: 10px;
+	}
+</style>
+<body>
+	<div class="listbox">
+		<div class="list" id="listone">
+			<a href="#listone">Brand</a>
+			<span></span>
+			<p>我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</p>
+		</div>
+		<div class="list" id="listtwo">
+			<a href="#listtwo">Brand</a>
+			<span></span>
+			<p>我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</p>
+		</div>
+		<div class="list" id="listthree">
+			<a href="#listthree">Brand</a>
+			<span></span>
+			<p>我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容我是内容</p>
+		</div>
+	</div>
+</body>
+</html>
