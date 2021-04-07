@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		text-decoration: none;
+	}
+	.nav{
+		width: 1000px;
+		height: 40px;
+		border: 1px solid #cccccc;
+		margin: 100px auto;
+	}
+	.nav ul li{
+		width: 99px;
+		height: 40px;
+		float: left;
+		border-right: 1px dashed #cccccc;
+	}
+	.nav ul li a{
+		display: block;
+		text-decoration: none;
+		font-size: 12px;
+		color: #909090;
+		line-height: 40px;
+		background: url(./鼠标移入图片效果/1.jpg) no-repeat;
+		padding-left: 30px;
+		transition: all 0.5s;
+	}
+	.nav ul li:nth-of-type(1) a{
+		background-position: 0px -50px;
+	}
+	.nav ul li:nth-of-type(2) a{
+		background-position: 0px -100px;
+	}
+	.nav ul li:nth-of-type(3) a{
+		background-position: 0px -50px;
+	}
+	.nav ul li:nth-of-type(4) a{
+		background-position: 0px -50px;
+	}
+	.nav ul li:nth-of-type(1):hover a{
+		color: green;
+		background-position: 0px -100px;
+	}
+	.nav ul li:nth-of-type(2):hover a{
+		color: green;
+		background-position: 0px -150px;
+	}
+	.nav ul li:nth-of-type(3):hover a{
+		color: green;
+		background-position: 0px -200px;
+	}
+	.nav ul li:nth-of-type(4):hover a{
+		color: green;
+		background-position: 0px -250px;
+	}
+</style>
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="">我的主页</a></li>
+			<li><a href="">新闻头条</a></li>
+			<li><a href="">电视剧</a></li>
+			<li><a href="">最新电影</a></li>
+		</ul>
+	</div>
+</body>
+</html>
