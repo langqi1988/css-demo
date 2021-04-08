@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	.listbox{
+		width: 620px;
+		margin: 50px auto;
+	}
+	.listbox h3{
+		font-size: 17px;
+		color: #a53333;
+		text-align: center;
+		border-bottom: 1px dashed #cccccc;
+		font-weight: 300;
+		padding-bottom: 5px;
+	}
+	.pic img{
+		/*图片默认会向下撑大3像素 解决办法 displ：block*/
+		display: block;
+		width: 100px;
+		height: 75px;
+		border: 1px solid #cccccc;
+		padding: 2px;
+		background: white;
+	}
+	.pic{
+		float: left;
+		border: 1px solid #bbbbbb;
+		width: 106px;
+		padding: 5px;
+		background: #eeeeee;
+		margin: 3px;
+		position: relative;
+	}
+	.list{
+		margin-top: 10px;
+		/* overflow: hidden; 图片放大后，超出会被裁剪*/
+	}
+	.pic img:nth-of-type(2){
+		display: none;
+		width: 150px;
+		height: 100px;
+		position: absolute;
+		top: -10px;
+		left: -20px;
+		z-index: 88;
+	}
+	.pic:hover img:nth-of-type(2){
+		display: block;
+		border-color: #000;
+	}
+	.listbox p{
+		text-align: center;
+		font-size: 12px;
+		color: #777;
+		margin-top: 10px ;
+	}
+	.clear{
+		clear: both;
+	}
+</style>
+<body>
+	<div class="listbox">
+		<h3>Hoverbox Image Gallery</h3>
+		<div class="list">
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="pic">
+				<img src="./下载.jpg" >
+				<img src="./下载.jpg" >
+			</div>
+			<div class="clear"></div>
+		</div>
+		<p>我是底部说明</p>
+	</div>
+</body>
+</html>
