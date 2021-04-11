@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	div{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 200px;
+		height: 200px;
+		/* background: #333333; */
+		margin-top:-100px;
+		margin-left:-100px;
+		
+	}
+	p{
+		width: 160px;
+		height: 160px;
+		background: url(下载.jpg);
+		border: 20px solid rgba(255,255,255,0.5);
+		background-origin: border-box;
+		transform-origin: center top;
+		transition: all 0.5s linear;
+		opacity: 1;
+	}
+	h1{
+		position: absolute;
+		top: 0;
+		opacity: 0;
+		width: 200px;
+		height: 200px;
+		background: #333;
+		font-size: 50px;
+		text-align: center;
+		line-height: 200px;
+		color: #fff;
+		transition: all 0.5s linear;
+		transform: rotateX(180deg);
+		transform-origin: center bottom;
+	}
+	div:hover p{
+		transform: rotateX(180deg);
+		opacity: 0;
+	}
+	div:hover h1{
+		opacity: 1;
+		transform: rotateX(0deg);
+	}
+</style>
+<body>
+	<div>
+		<p></p>
+		<h1>文字</h1>
+	</div>
+</body>
+</html>
