@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	dl{
+		width: 199px;
+		height: 236px;
+		border-right: 1px solid #f00;
+		border-bottom: 1px solid #f00;
+	}
+	dl dt{
+		width: 199px;
+		height: 164px;
+		border-bottom: 1px solid #f00;
+		text-align: center;
+	}
+	dl dt img{
+		vertical-align: middle;
+	}
+	dl dt span{
+		display: inline-block;
+		width: 0;
+		height: 100%;
+		vertical-align: middle;
+	}
+</style>
+/*
+在img后面加入一个标签
+让标签宽度0
+高度100% vertical-align:middle;
+img也 vertical-align:middle;
+让他们两个互相以中心点对齐
+left0 right0 top0 bottom0 marginauto 也行
+*/
+<body>
+	<div>
+		<dl>
+			<dt><img src="" alt=""></dt>
+			<span></span>
+			<dd>跑步机</dd>
+			<dd>$4444</dd>
+		</dl>
+		<dl>
+			<dt><img src="" alt=""></dt>
+			<span></span>
+			<dd>跑步鞋</dd>
+			<dd>$6666</dd>
+		</dl>
+	</div>
+</body>
+</html>
