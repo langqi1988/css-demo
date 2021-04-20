@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+</head>
+<style type="text/css">
+	*{margin: 0;padding: 0;}
+	body{background: #ffbfcd;}
+	p{width: 300px;height: 300px;border: 10px solid #fff;position: relative;}
+	p::after{content: "";display: block;width: 200px;height: 200px;box-shadow: 0px 15px 20px rgba(0,0,0,.7);transform: skewY(10deg);position: absolute;bottom: 10px;right: 15px;z-index: -1;}
+	p::before{content: "";display: block;width: 200px;height: 200px;box-shadow: 0px 15px 20px rgba(0,0,0,.7);transform: skewY(-10deg);position: absolute;bottom: 10px;left: 15px;z-index: -1;}
+	img{width: 100%;height: 100%;}
+</style>
+<body>
+	<p>
+		<img src="下载.jpg" >
+	</p>
+</body>
+</html>
